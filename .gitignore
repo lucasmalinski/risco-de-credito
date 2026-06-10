@@ -1,0 +1,9 @@
+.github
+.env
+rubrica_professor.md
+.venv
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python

@@ -85,7 +85,7 @@ JOIN dim_cliente c
     ON c.idade = s.person_age
    AND c.renda_anual = s.person_income
    AND c.posse_residencia = s.person_home_ownership
-   AND c.tempo_empregada = s.person_emp_length
+   AND c.tempo_empregada IS NOT DISTINCT FROM s.person_emp_length 
 JOIN dim_perfil_emprestimo p
     ON p.finalidade_emprestimo = s.loan_intent
    AND p.classificacao_emprestimo = s.loan_grade

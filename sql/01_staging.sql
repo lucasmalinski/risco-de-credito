@@ -1,9 +1,9 @@
 -- Cria a tabela staging para o dataset de risco de credito.
 -- Ajuste os tipos se o CSV de origem tiver variacoes de precisao.
 
-DROP TABLE IF EXISTS staging_credit_risk;
+DROP TABLE IF EXISTS bronze.staging_credit_risk;
 
-CREATE TABLE staging_credit_risk (
+CREATE TABLE bronze.staging_credit_risk (
     person_age INTEGER,
     person_income NUMERIC(12, 2),
     person_home_ownership VARCHAR(50),

@@ -46,21 +46,21 @@ SELECT DISTINCT
     person_income,
     person_home_ownership,
     person_emp_length
-FROM bronze.staging_credit_risk
+FROM bronze.staging_risco_de_credito
 ORDER BY 1, 2, 3, 4;
 
 INSERT INTO analytics.dim_perfil_emprestimo (finalidade_emprestimo, classificacao_emprestimo)
 SELECT DISTINCT
     loan_intent,
     loan_grade
-FROM bronze.staging_credit_risk
+FROM bronze.staging_risco_de_credito
 ORDER BY 1, 2;
 
 INSERT INTO analytics.dim_historico_credito (inadimplencia_historica, duracao_historico_credito)
 SELECT DISTINCT
     cb_person_default_on_file,
     cb_person_cred_hist_length
-FROM bronze.staging_credit_risk
+FROM bronze.staging_risco_de_credito
 ORDER BY 1, 2;
 
 INSERT INTO analytics.fato_emprestimo (
@@ -80,7 +80,7 @@ SELECT
     s.loan_int_rate,
     s.loan_percent_income,
     s.loan_status
-FROM bronze.staging_credit_risk s
+FROM bronze.staging_risco_de_credito s
 JOIN analytics.dim_cliente c
     ON c.idade = s.person_age
    AND c.renda_anual = s.person_income

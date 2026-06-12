@@ -1,6 +1,6 @@
-# Credit Risk Warehouse + Machine Learning
+# Warehouse Dataset Risco de Crédito + Machine Learning
 
-Projeto prático final da disciplina de Desenvolvimento para Ciência de Dados II. O objetivo é construir uma solução completa de dados de ponta a ponta: desde a ingestão bruta, modelagem dimensional em Star Schema utilizando conceitos avançados de arquitetura em camadas (Medalhão), até a entrega de visões analíticas e modelos preditivos de Machine Learning (Classificação e Regressão).
+Projeto prático final da disciplina de Desenvolvimento para Ciência de Dados II. O objetivo é construir uma solução completa de dados de ponta a ponta: desde a ingestão bruta, modelagem dimensional em Star Schema utilizando conceitos de arquitetura em camadas (Medalhão), até a entrega de visões analíticas e modelos preditivos de Machine Learning (Classificação e Regressão).
 
 ## Arquitetura de Dados (Camadas & Star Schema)
 
